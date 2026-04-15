@@ -1,0 +1,38 @@
+# 🚨 Day 3 — Real-World Scenario: Failed Login Investigation
+
+## 📌 Scenario
+While monitoring system logs, I investigated authentication activity to identify potential failed login attempts and suspicious access.
+
+
+## 🎯 Objective
+- Analyse system logs  
+- Identify failed login attempts  
+- Understand authentication behaviour  
+- Practice real-world security monitoring  
+
+
+## 🛠️ Commands Used
+
+```bash
+sudo cat /var/log/auth.log
+sudo less /var/log/auth.log
+sudo tail -f /var/log/auth.log
+
+🔍 Investigation Steps
+1. Viewed Authentication Logs
+sudo cat /var/log/auth.log
+
+✔ Observed system login activity
+✔ Found authentication-related entries
+
+2. Analysed Logs in Detail
+sudo less /var/log/auth.log
+
+✔ Scrolled through logs
+✔ Identified suspicious entries
+
+3. Monitored Logs in Real-Time
+sudo tail -f /var/log/auth.log
+
+✔ Observed live login attempts
+✔ Checked for repeated failures
