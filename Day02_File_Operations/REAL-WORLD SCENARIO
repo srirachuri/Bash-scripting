@@ -1,0 +1,8 @@
+## 🔐 Backup Safety Practice (Important)
+
+```bash
+cp test.txt backup/
+mv backup/test.txt backup/test.txt.bak
+Created a backup before modifying files to prevent data loss.
+echo "Backup Created safely before modifying files" > success_backup_created.txt
+cat success_backup_created.txt
