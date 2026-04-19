@@ -1,0 +1,43 @@
+# Day 4 — Search & Text Processing
+
+## 📌 Overview
+On Day 4, I practised searching, filtering, counting, sorting, and editing text using essential Linux commands. These skills are important for log analysis and cloud security tasks.
+
+## 🛠 Commands Practiced
+
+### 🔍 grep — Search Text
+- Search for specific words inside files
+```bash
+grep "error" test.txt
+grep -i "failed" /var/log/auth.log
+🔢 wc — Count Lines/Words
+Count number of lines in a file
+wc -l test.txt
+🔗 Pipe (|)
+Combine commands
+grep "error" test.txt | wc -l
+🔃 sort — Sort Data
+Sort lines alphabetically
+sort test.txt
+🔁 uniq — Remove Duplicates
+Remove duplicate lines
+uniq test.txt
+Count occurrences
+sort test.txt | uniq -c
+✏️ sed — Edit Text
+Replace text in file
+sed -i 's/error/WARNING/g' test.txt
+📂 Files Used
+test.txt
+
+Sample log file containing:
+
+error
+login success
+warning
+login failed
+🔍 Log Analysis Practice
+grep -a "error" /var/log/syslog
+grep -i "failed" /var/log/auth.log
+
+👉 Learned how real system logs contain warnings, errors, and failures.
