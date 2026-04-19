@@ -48,3 +48,10 @@ Secured confidential data
 Restricted unauthorized access
 Hardened system using permissions and ownership
 Simulated real-world cloud/server security practices
+
+Status
+✔ Completed server hardening using chmod, chown, and secure SSH practices.
+
+Final Output
+echo "I Completed Hardened Server by Securing File Permissions and Ownership Successfully!" > success_hardening_server.txt
+cat success_hardening_server.txt
