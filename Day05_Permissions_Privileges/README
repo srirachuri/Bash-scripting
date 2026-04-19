@@ -1,13 +1,14 @@
-**Day 5 — Permissions & Privileges**
+# Day 5 — Permissions & Privileges
 
 ## 📌 Overview
-On Day 5, I practised Linux file permissions, user management, and privilege control. These are critical for securing systems and preventing unauthorised access.
+On Day 5, I practised Linux file permissions, user management, and privilege control. These are critical for securing systems and preventing unauthorized access.
 
 ---
 
 ## 🛠 Commands Used
 
 ### 🔐 Check File Permissions
+
 ```bash
 ls -l test.txt
 ✏️ Change Permissions (chmod)
