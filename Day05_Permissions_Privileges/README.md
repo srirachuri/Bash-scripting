@@ -1,4 +1,5 @@
 # 🚀 Day 5 — Permissions & Privileges
+
 ## 📌 Overview
 On Day 5, I practised Linux file permissions, user management, and privilege control. These are critical for securing systems and preventing unauthorized access.
 
