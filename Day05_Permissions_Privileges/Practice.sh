@@ -1,5 +1,4 @@
 # 🔐 Day 5 — Mini Practice: File Security
-
 ---
 
 ## 📌 Overview
