@@ -1,5 +1,4 @@
-# Day 4 — Search & Text Processing
-
+# 📅 Day 4 — Search & Text Processing
 ## 📌 Overview
 On Day 4, I practised searching, filtering, counting, sorting, and editing text using essential Linux commands. These skills are important for log analysis and cloud security tasks.
 
@@ -11,7 +10,7 @@ On Day 4, I practised searching, filtering, counting, sorting, and editing text 
 grep "error" test.txt
 grep -i "failed" /var/log/auth.log
 🔢 wc — Count Lines/Words
-Count number of lines in a file
+Count the number of lines in a file
 wc -l test.txt
 🔗 Pipe (|)
 Combine commands
