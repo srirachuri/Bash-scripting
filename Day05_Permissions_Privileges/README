@@ -1,0 +1,31 @@
+**Day 5 — Permissions & Privileges**
+
+## 📌 Overview
+On Day 5, I practised Linux file permissions, user management, and privilege control. These are critical for securing systems and preventing unauthorised access.
+
+---
+
+## 🛠 Commands Used
+
+### 🔐 Check File Permissions
+```bash
+ls -l test.txt
+✏️ Change Permissions (chmod)
+chmod 600 test.txt
+Owner: Read & Write
+Others: No access
+👤 Create New User
+sudo useradd -m testuser
+🔑 Set Password
+sudo passwd testuser
+🔄 Switch User
+su - testuser
+🚫 Permission Test
+cat /home/.../test.txt
+
+👉 Result: Permission Denied
+
+👑 Use sudo (Admin Privileges)
+sudo ls /root
+🔄 Change Ownership (chown)
+sudo chown root:root test.txt
