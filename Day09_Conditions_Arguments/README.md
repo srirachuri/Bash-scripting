@@ -53,23 +53,6 @@ Output:
 File abc.txt Missing
 ```
 
-## Concepts Learned
-
-- Conditional statements
-- if / else syntax
-- Script arguments (`$1`)
-- File test operator (`-f`)
-- Bash scripting basics
-
-## Real-World Use
-
-System administrators and cloud engineers use file existence checks to:
-
-- Validate configuration files
-- Verify backups
-- Check log files
-- Automate system monitoring
-
 ## Status
 
 ✅ Completed Day 9
