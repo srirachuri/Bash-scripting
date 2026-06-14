@@ -1,0 +1,135 @@
+# Day 9 - Pre-Deployment File Validation Script
+
+## Project Overview
+
+This Bash script validates whether a configuration file exists before starting a deployment process.
+
+The script helps prevent deployment failures by ensuring that required configuration files are available.
+
+---
+
+## Script
+
+```bash
+#!/bin/bash
+
+set -e
+
+if [ -z "$1" ]; then
+    echo "Error: No File Provided"
+    echo "Usage: $0 <config_file>"
+    exit 1
+fi
+
+if [ -f "$1" ]; then
+    echo "Config file Found. Proceeding with Deployment"
+else
+    echo "Config file Missing. Deployment Stopped"
+    exit 1
+fi
+```
+
+---
+
+## Features
+
+- Validates user input
+- Checks if a file argument is provided
+- Verifies file existence
+- Stops deployment when required files are missing
+- Uses proper exit codes for error handling
+
+---
+
+## Usage
+
+### Make the script executable
+
+```bash
+chmod +x validate_config.sh
+```
+
+### Check an existing file
+
+```bash
+./validate_config.sh script.txt
+```
+
+Output:
+
+```text
+Config file Found. Proceeding with Deployment
+```
+
+### Check a missing file
+
+```bash
+./validate_config.sh missing.txt
+```
+
+Output:
+
+```text
+Config file missing. Deployment Stopped
+```
+
+### Run without an argument
+
+```bash
+./validate_config.sh
+```
+
+Output:
+
+```text
+Error: No File Provided
+Usage: ./validate_config.sh <config_file>
+```
+
+---
+
+## Concepts Practised
+
+- Bash Scripting
+- Conditional Statements (if/else)
+- Script Arguments ($1)
+- File Validation (-f)
+- Empty Input Check (-z)
+- Exit Codes
+- Error Handling
+
+---
+
+## Cloud Security & DevOps Relevance
+
+This type of validation is commonly used in:
+
+- Deployment Automation
+- CI/CD Pipelines
+- Infrastructure Validation
+- Configuration Management
+- Security Compliance Checks
+
+Before deploying applications, engineers often verify that critical configuration files exist to avoid failures and security issues.
+
+---
+
+## Project Status
+
+✅ Completed Successfully
+
+### Test Results
+
+| Test Case | Result |
+|------------|---------|
+| Existing File | Passed |
+| Missing File | Passed |
+| No Argument Provided | Passed |
+
+---
+
+## Author
+
+Sri Gayathri
+
+Learning Linux, Bash Scripting, Cloud Security, and DevOps Automation.
